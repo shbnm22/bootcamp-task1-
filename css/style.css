@@ -1,0 +1,106 @@
+
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+@font-face {
+    font-family: "vazir";
+    font-weight: normal;
+    font-style: normal;
+    src: url(/fonts/Vazir.woff) format("woff");
+}
+/* root variable */
+:root {
+--color-primaray: #219f95 ;
+--color-primaray-number :#afcedd;
+--color-h2:#234894;
+--color-h4:#696969;
+--color-dark:#1e1e1e;
+--color-font:#333333;
+--color-white:#fff;
+}
+
+h2{
+    color: var(--color-h2);
+}
+h4{
+color :var(--color-h4)
+}
+
+body{
+    font-family: "vazir";
+    color :var(--color-body);
+    background-color: var(--color-primaray-number);
+   
+}
+
+.modal {
+box-shadow: 0 0 3px rgb(88, 85, 85);
+background-color: var(--color-white);
+height: 60%;
+margin-top: 10%;
+margin-right: 50px;
+margin-left:50px;
+border-radius: 30px;
+padding: 2rem;
+}
+
+.btn-number{
+    color: var(--color-h2);
+    background-color: var(--color-primaray-number);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+
+}
+.titr{
+    color: var(--color-h2);
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.5rem 0.5rem;
+}
+.date{
+    color: var(--color-h4);
+    margin-right: 25%;
+}
+.profile{
+    width: 3.5rem;
+    border-radius: 10px;
+    
+}
+.name{
+    color: var(--color-dark);
+    font-size:1.6rem ;
+    font-weight: bold;
+    
+}
+.button-reqest{
+    background-color: var(--color-primaray);
+    color: var(--color-white);
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgb(116, 115, 115);
+margin-right: 280px;
+}
+
+.content{
+    
+    font-size: 20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+}
+@media screen and (min-whidth: 768px) {
+    .content{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.class{
+    background-color:var(--color-white);
+    width: 100%;
+}
